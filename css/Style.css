@@ -267,21 +267,21 @@ h2{
     background-color: #ff305b;
     margin: auto; 
 }
-
-.sec3 .container{
-    width: 80%;
-    height: 300px;
-    margin: auto;
-    margin-top: 50px;
-    padding-bottom: 40px;
-    display: flex;
-}
-
 .sec3 .container .sec{
-    width: 25%;
-    height: 250px;
-    padding-top: 30px;
+    width: 20%;
+    box-sizing: border-box;
+    padding: 50px;
+    height: auto;
+    width: auto;
 }
+.sec3 .container{
+    padding: 5%; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .sec3 .container .sec h4{
     font-size: 25px;
     margin-bottom: 5%;
@@ -582,23 +582,32 @@ footer span{
 
 
 @media (max-width: 900px){
-    .nav-list ul{
-        
+    .nav-list{
+        width: 100%;
+    }
+    .nav-logo{
+        font-size: 32px;
+    }
+    nav{
+       height: 12%;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+       align-items: center;
+    }
+    .sec2 .img{
+        width: 100%;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
-        list-style-type: none;
-        
-    }
-  
+     }   
+     .sec2 .content{
+         width: auto; 
+     }
     .sec2{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         height: auto;
-    
     }
    .sec3 .container{
        position: relative;
@@ -607,7 +616,7 @@ footer span{
        justify-content: center;
        align-items: center;
        height: auto;
-       width: auto;
+      
 
    }
    .sec3 .sec{
